@@ -40,7 +40,7 @@ export default function Home({ shows, currentTime }) {
     </div>
   );
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
   //fetch on the server
   const res = await fetch(
     'https://api.themoviedb.org/3/tv/popular?api_key=3c81d3d434a13d39edaea832df6550a3&page=1'
